@@ -68,6 +68,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   resource_group_name = data.azurerm_virtual_network.vnet.resource_group_name
   size                = var.size # Free tier Standard_B1s
   admin_username      = var.admin_username
+  user_data           = var.user_data
   network_interface_ids = [azurerm_network_interface.nic.id]
 
   admin_ssh_key {

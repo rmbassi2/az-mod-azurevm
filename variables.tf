@@ -50,3 +50,9 @@ variable "size" {
   type        = string
   default     = "Standard_B1s"
 }
+
+variable "user_data" {
+  description = "userdata for vm"
+  type = string
+  default = null
+}
