@@ -47,6 +47,6 @@ variable "ssh_public_key_path" {
 
 variable "size" {
   description = "size of the vm"
-  type        = "String"
+  type        = string
   default     = "Standard_B1s"
 }
