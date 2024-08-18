@@ -44,3 +44,9 @@ variable "ssh_public_key_path" {
   type        = string
   default     = "~/.ssh/id_rsa.pub"
 }
+
+variable "size" {
+  description = "size of the vm"
+  type        = "String"
+  default     = "Standard_B1s"
+}

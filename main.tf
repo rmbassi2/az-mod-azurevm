@@ -66,7 +66,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   name                = var.vm_name
   location            = data.azurerm_virtual_network.vnet.location
   resource_group_name = data.azurerm_virtual_network.vnet.resource_group_name
-  size                = "Standard_B1ls" # Free tier
+  size                = var.size # Free tier Standard_B1s
   admin_username      = var.admin_username
   network_interface_ids = [azurerm_network_interface.nic.id]
 
