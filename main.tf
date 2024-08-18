@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">= 3.115.0" // specify the required version of the AzureRM provider
+    }
+  }
+}
+
 data "azurerm_virtual_network" "vnet" {
     name = var.vnet_name
     resource_group_name = var.resource_group_name
